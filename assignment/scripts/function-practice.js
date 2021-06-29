@@ -28,18 +28,18 @@ function addNumbers( firstNumber, secondNumber) {
 console.log('4 + 8 =', addNumbers(4,8));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(a, b, c ){
+  return a * b * c;
 }
-
+console.log('2 * 3 * 4 =', multiplyThree(2, 3, 4));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
-  }
-    return;
+    return true;
+  } else
+    return false;
 }
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome

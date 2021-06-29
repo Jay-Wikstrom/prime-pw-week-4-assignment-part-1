@@ -111,9 +111,32 @@ console.log(sumAll([3,4,2,2,2]));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-
-
+function positiveArray(array){
+  let newArray = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i] > 0){
+      newArray.push(array[i]);
+    }
+  }
+  return newArray;
+}
+console.log(positiveArray([3,5,6,-5,0,9]));
+console.log(positiveArray([-4, 0, -1]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+/*
+https://edabit.com/challenge/4gzDuDkompAqujpRi
+They want me to create a function with a number parameter.  I then input a number
+in my parameter and it will add all positive numbers starting at 1 up to the
+number I input.
+*/
+function addUp(num){
+  let sum = 0;
+  for (let i = 0; i <= num; i++){
+    sum += i;
+  }
+  return sum;
+}
+console.log(addUp(10));
